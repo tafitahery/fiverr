@@ -39,6 +39,37 @@
       font-family: "Montserrat", sans-serif;
     }
 
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .options {
+      position: absolute;
+      right: 0;
+      top: 50px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: gray;
+      width: 200px;
+      font-weight: 300;
+    }
+
     button {
       padding: 10px 20px;
       border-radius: 5px;
