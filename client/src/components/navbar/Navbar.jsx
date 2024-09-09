@@ -79,41 +79,40 @@ export default function Navbar() {
           )}
         </div>
       </div>
-      {active ||
-        (location.pathname !== "/" && (
-          <>
-            <hr />
-            <div className="menu">
-              <Link className="link" to="/">
-                Graphics & Design
-              </Link>
-              <Link className="link" to="/">
-                Video & Animation
-              </Link>
-              <Link className="link" to="/">
-                Writing & Translation
-              </Link>
-              <Link className="link" to="/">
-                AI Services
-              </Link>
-              <Link className="link" to="/">
-                Digital Marketing
-              </Link>
-              <Link className="link" to="/">
-                Music & Audio
-              </Link>
-              <Link className="link" to="/">
-                Porgramming & Tech
-              </Link>
-              <Link className="link" to="/">
-                Business
-              </Link>
-              <Link className="link" to="/">
-                Lifestyle
-              </Link>
-            </div>
-          </>
-        ))}
+      {(active || location.pathname !== "/") && (
+        <>
+          <hr />
+          <div className="menu">
+            <Link className="link" to="/">
+              Graphics & Design
+            </Link>
+            <Link className="link" to="/">
+              Video & Animation
+            </Link>
+            <Link className="link" to="/">
+              Writing & Translation
+            </Link>
+            <Link className="link" to="/">
+              AI Services
+            </Link>
+            <Link className="link" to="/">
+              Digital Marketing
+            </Link>
+            <Link className="link" to="/">
+              Music & Audio
+            </Link>
+            <Link className="link" to="/">
+              Porgramming & Tech
+            </Link>
+            <Link className="link" to="/">
+              Business
+            </Link>
+            <Link className="link" to="/">
+              Lifestyle
+            </Link>
+          </div>
+        </>
+      )}
     </div>
   );
 }
